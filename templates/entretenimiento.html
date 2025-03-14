@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- Contenedor de pestañas -->
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab('tres-en-raya')">Tres en Raya</button>
+    </div>
+
+    <!-- Contenido de Tres en Raya -->
+    <div class="entretenimiento">
+        <div id="tres-en-raya" class="tab-content active">
+            <h2 class="blanco">Tres en Raya de Hamburguesas</h2>
+            <div id="board">
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            </div>
+            <p class="blanco" id="status">Turno de: 🍔</p>
+            <button id="reset">Reiniciar</button>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+

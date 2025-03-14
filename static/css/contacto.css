@@ -1,0 +1,68 @@
+/* ========== SECCIÓN CONTACTO ========== */
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas grandes */
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 150px;
+}
+
+/* Estilos para la dirección */
+.direccion {
+    color: #8B0000; /* Rojo oscuro para todos los textos dentro de .direccion */
+    font-family: 'Georgia', serif; /* Fuente bonita */
+    color: #333; /* Color de texto oscuro */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.direccion h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #222; /* Color más oscuro para el título */
+}
+
+.direccion p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Estilos para el mapa */
+.contacto iframe {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 300px; /* Altura fija para el mapa */
+    border: none;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .contacto {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+        max-width: 95%; /* Más ancho en móviles */
+        padding: 10px; /* Menos padding en móviles */
+    }
+
+    .contacto iframe {
+        height: 250px; /* Altura más pequeña en móviles */
+        order: 2; /* Coloca el mapa debajo de la dirección */
+    }
+
+    .direccion {
+        order: 1; /* Coloca la dirección arriba */
+        text-align: center; /* Centra el texto en móviles */
+    }
+
+    .direccion h2 {
+        font-size: 24px; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .direccion p {
+        font-size: 16px; /* Tamaño de fuente más pequeño en móviles */
+    }
+}

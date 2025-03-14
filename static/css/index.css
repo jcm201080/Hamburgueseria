@@ -1,0 +1,91 @@
+.espacio {
+    margin-top: 20px;
+}
+.presentation {
+    background: url('/static/img/dehesa-de-extremadura.jpg') center/cover no-repeat;
+    position: relative;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 80px auto 150px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Filtro verde oscuro */
+.presentation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 50, 0, 0.5); /* Verde oscuro con opacidad */
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+/* Contenido para que las letras sean blancas y no afectadas por el filtro */
+.presentation-content {
+    position: relative;
+    z-index: 2; /* Para que quede por encima del filtro */
+    color: white; /* Letras 100% blancas */
+}
+
+.presentation-content h1, 
+.presentation-content p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+/* Estilos para los títulos */
+.presentation h1 {
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.presentation h2 {
+    font-size: 1.8rem;
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el texto */
+.presentation div {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .presentation {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .presentation h1 {
+        font-size: 2rem;
+    }
+
+    .presentation h2 {
+        font-size: 1.5rem;
+    }
+
+    .presentation div {
+        font-size: 1rem;
+    }
+}
+
+/* Clase para alinear texto a la izquierda en móviles */
+@media (max-width: 768px) {
+    .presentacion {
+        width: 80%
+    }
+}

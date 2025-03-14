@@ -1,0 +1,77 @@
+/* ========== SECCIÓN CARTA ========== */
+
+.cuadro-precios {
+    background-color: #f4f9fa; /* Marrón claro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 150px;
+}
+
+.cuadro-precios h3 {
+    font-size: 28px;
+    font-family: 'Georgia', serif;
+    margin-bottom: 15px;
+}
+
+.cuadro-precios .blanco {
+    color: red;
+}
+
+.cuadro-precios .negro {
+    color: black;
+}
+
+.cuadro-precios ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cuadro-precios li {
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cuadro-precios li:last-child {
+    border-bottom: none;
+}
+
+.navegacion-carta {
+    background-color: rgba(231, 232, 235, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.navegacion-carta a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navegacion-carta a:hover {
+    color: #555;
+}
+
+/* Clase para alinear texto a la izquierda en móviles */
+@media (max-width: 768px) {
+    .texto-izquierda-movil {
+        text-align: left !important; /* Fuerza la alineación a la izquierda */
+    }
+    .cuadro-precios {
+        width: 75%
+    }
+}

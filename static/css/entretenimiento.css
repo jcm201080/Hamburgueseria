@@ -1,0 +1,191 @@
+/* ========== SECCIÓN ENTRETENIMIENTO ========== */
+#entretenimiento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/static/img/fondo_gracioso.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px; /* Evita que se pegue al footer */
+}
+
+/* Estilos para los juegos */
+#board, #tetrisCanvas {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Tres en Raya */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #f0c14b;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#reset:hover {
+    background-color: #cc5500;
+}
+
+/* Tetris */
+#tetrisCanvas {
+    width: 100%;
+    max-width: 300px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#score {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Botones */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc5500;
+}
+
+/* ========== PESTAÑAS ========== */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #ff6600;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    text-align: center;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Centrar juegos */
+#board, #tetrisCanvas {
+    margin: 20px auto;
+}
+
+/* Botones de Tetris */
+.tetris-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tetris-controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tetris-controls button:hover {
+    background-color: #cc5500;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media (max-width: 600px) {
+    #board {
+        grid-template-columns: repeat(3, 80px);
+        gap: 3px;
+    }
+
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .tab-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+}

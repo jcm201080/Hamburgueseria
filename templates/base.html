@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEHESA BURGERS'S</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+    <<body>
+    <header>
+        <div class="social-icons">
+            <a href="#"><img src="{{ url_for('static', filename='img/iconos/facebook.png') }}" alt="Facebook"></a>
+            <a href="#"><img src="{{ url_for('static', filename='img/iconos/instagram.png') }}" alt="Instagram"></a>
+            <a href="#"><img src="{{ url_for('static', filename='img/iconos/e_mail.png') }}" alt="Email"></a>
+            <a href="#"><img src="{{ url_for('static', filename='img/iconos/twitter.png') }}" alt="Twitter"></a>
+        </div>
+        <div class="logo">
+            <a href="#"><img src="{{ url_for('static', filename='img/logo1.jpg') }}" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('carta') }}">Carta</a></li>
+                <li><a href="{{ url_for('galeria') }}">Galería</a></li>
+                <li><a href="{{ url_for('entretenimiento') }}">Mientras esperas</a></li>
+                <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contenido">
+            {% block content %}{% endblock %}
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 DEHESA BURGERS'S - Todos los derechos reservados</p>
+    </footer>
+    <!-- Incluimos el archivo JavaScript justo antes del cierre de body -->
+    <script src="{{ url_for('static', filename='js/fotos.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/tabs.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/tres_en_raya.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/tetris.js') }}" defer></script>
+</body>
+</html>

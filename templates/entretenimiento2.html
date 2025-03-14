@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Entretenimiento</h1>
+
+    <!-- Contenedor de pestañas -->
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab('tres-en-raya')">Tres en Raya</button>
+        <button class="tab-button" onclick="openTab('tetris')">Tetris</button>
+    </div>
+
+    <!-- Contenido de Tres en Raya -->
+    <div class="entretenimiento">
+        <div id="tres-en-raya" class="tab-content active">
+            <h2>Tres en Raya de Hamburguesas</h2>
+            <div id="board">
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            </div>
+            <p id="status">Turno de: 🍔</p>
+            <button id="reset">Reiniciar</button>
+        </div>
+    </div>
+
+    <!-- Contenido de Tetris -->
+    <div id="tetris" class="tab-content">
+        <h2>Tetris de Hamburguesas</h2>
+        <canvas id="tetrisCanvas" width="300" height="600"></canvas>
+        <div class="tetris-controls">
+            <button id="startGame">Start</button>
+            <button id="stopGame">Stop</button>
+        </div>
+    </div>
+{% endblock %}
