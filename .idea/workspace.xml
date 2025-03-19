@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a3b38a8-4d42-49ed-a039-fea37d6f2623" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qr_Ngrok.py" beforeDir="false" afterPath="$PROJECT_DIR$/qr_Ngrok.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/galeria.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/galeria.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/tetris.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/tetris.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/tres_en_raya.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/tres_en_raya.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qr_code_Ngrok.png" beforeDir="false" afterPath="$PROJECT_DIR$/qr_code_Ngrok.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/entretenimiento.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/entretenimiento.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/tablero.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/tablero.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/carta.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/carta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contacto.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/entretenimiento.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/entretenimiento.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/entretenimiento2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/entretenimiento2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fotos.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +99,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app.py</url>
-          <line>9</line>
+          <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

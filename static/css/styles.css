@@ -13,7 +13,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 /* ========== ENCABEZADO ========== */
@@ -99,17 +99,16 @@ footer {
     width: 100%;
 }
 
+/* ========== MEDIA QUERIES ========== */
 
-/*Para moviles*/
+/* Para móviles */
 @media (max-width: 768px) {
     main {
         background-size: contain; /* La imagen se ajustará sin cortarse */
         background-position: center;
     }
-}
 
-/*Encabezado*/
-@media (max-width: 768px) {
+    /* Encabezado */
     header {
         flex-direction: column;
         align-items: center;
@@ -131,31 +130,34 @@ footer {
         width: 100%;
     }
 
+    /* Menú de navegación */
     nav ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+        justify-content: space-around; /* Distribuye el espacio entre los elementos */
+        gap: 10px; /* Espacio entre elementos */
     }
 
     nav ul li {
-        display: block;
+        flex: 1 1 30%; /* Cada elemento ocupa el 30% del ancho disponible */
+        text-align: center;
         margin: 5px 0;
     }
-}
 
-/*footer*/
-@media (max-width: 768px) {
+    /* Asegura que solo haya 3 elementos en la primera fila */
+    nav ul li:nth-child(-n+3) {
+        flex-basis: 30%; /* Ancho fijo para los primeros 3 elementos */
+    }
+
+    /* Asegura que los últimos 2 elementos ocupen el 45% del ancho */
+    nav ul li:nth-child(n+4) {
+        flex-basis: 45%; /* Ancho fijo para los últimos 2 elementos */
+    }
+
+    /* Footer */
     footer {
         position: fixed;
         bottom: 0;
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-

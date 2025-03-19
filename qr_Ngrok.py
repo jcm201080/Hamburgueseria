@@ -1,7 +1,7 @@
 import qrcode
 
 # Dirección IP de tu red local y puerto
-url = "https://5b97-2a0c-5a84-7706-e600-4c3-b439-f0f4-b904.ngrok-free.app "
+url = "https://8b20-37-11-132-93.ngrok-free.app  "
 
 
 # Generar el código QR

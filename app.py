@@ -1,3 +1,5 @@
+from doctest import debug
+
 from flask import Flask, render_template, request,  jsonify
 import os
 
@@ -38,4 +40,4 @@ def lista_imagenes():
 
 if __name__ == '__main__':
     # Asegúrate de que el servidor se ejecuta en todas las interfaces de red (0.0.0.0)
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True)

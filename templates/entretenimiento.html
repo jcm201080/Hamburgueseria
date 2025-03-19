@@ -5,6 +5,7 @@
     <!-- Contenedor de pestañas -->
     <div class="tabs">
         <button class="tab-button active" onclick="openTab('tres-en-raya')">Tres en Raya</button>
+        <button class="tab-button" onclick="openTab('tablero-oca')">Tablero Burguer</button>
     </div>
 
     <!-- Contenido de Tres en Raya -->
@@ -18,6 +19,31 @@
             </div>
             <p class="blanco" id="status">Turno de: 🍔</p>
             <button id="reset">Reiniciar</button>
+        </div>
+        <!-- Contenido de Tablero -->
+        <div id="tablero-oca" class="tab-content">
+            <div id="configuracion">
+                <label for="numJugadores">Número de jugadores (1-6):</label>
+                <input type="number" id="numJugadores" min="1" max="6" value="2">
+                <button id="iniciarJuego">Iniciar Juego</button>
+            </div>
+
+            <!-- Contenedor para los nombres de los jugadores -->
+            <div id="nombresJugadores"></div>
+            <div id="tablero"></div>
+
+            <button id="tirarDado">Tirar Dado</button>
+            <div id="estadoJuego"></div>
+            <button id="mostrarReglas">Mostrar Reglas</button>
+            <div class="reglas">
+                <h1>Cómo funciona</h1>
+                <p>Tablero: Se crea dinámicamente con 35 casillas, algunas de las cuales tienen efectos especiales.</p>
+                <p>Jugadores: Cada jugador tiene una ficha y una posición en el tablero.</p>
+                <p>Turnos: Los jugadores tiran el dado por turnos y avanzan en el tablero.</p>
+                <p>Casillas Especiales: Si un jugador cae en una casilla especial, se aplica una penalización o un avance extra.</p>
+                <p>Victoria: El primer jugador en llegar o superar la casilla 35 gana el juego.</p>
+            </div>
+
         </div>
     </div>
 
