@@ -14,20 +14,19 @@
 
 /* Estilos para la dirección */
 .direccion {
-    color: #8B0000; /* Rojo oscuro para todos los textos dentro de .direccion */
+    color: #FFFFFF; /* Rojo blancp para todos los textos dentro de .direccion */
     font-family: 'Georgia', serif; /* Fuente bonita */
-    color: #333; /* Color de texto oscuro */
     line-height: 1.6; /* Espaciado entre líneas */
 }
 
 .direccion h2 {
-    font-size: 28px;
+    font-size: 48px;
     margin-bottom: 15px;
     color: #222; /* Color más oscuro para el título */
 }
 
 .direccion p {
-    font-size: 18px;
+    font-size: 28px;
     margin: 10px 0;
 }
 
