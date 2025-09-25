@@ -38,6 +38,9 @@ def lista_imagenes():
     return jsonify(imagenes)
 
 
+
+# IMPORTANTE: Cambios para producción
 if __name__ == '__main__':
-    # Asegúrate de que el servidor se ejecuta en todas las interfaces de red (0.0.0.0)
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    port = int(os.environ.get('PORT', 5000))  # Render asigna el puerto automáticamente
+    # debug=False en producción
+    app.run(host='0.0.0.0', port=port, debug=False)
